@@ -2,6 +2,28 @@
 	display: none;
 }
 
+.loading{
+	margin-top: 10px;
+	text-align: center;
+	color: #3497e4;
+	font-family: 'Verdana';
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.error{
+	margin-top: 10px;
+	text-align: center;
+	color: #e04006;
+	font-family: 'Verdana';
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.loading img, .error img{
+	width: 128px;
+}
+
 .presentacion{
 	text-align: center;
 	font-family: 'Verdana';
@@ -105,5 +127,11 @@ table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSo
 @media screen and (max-width: 450px){
 	.titulo{
 		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 320px){
+	body{
+		width: 320px;
 	}
 }
