@@ -1,22 +1,75 @@
-.content{
+.content, .error{
 	display: none;
+}
+
+.presentacion{
+	text-align: center;
+	font-family: 'Verdana';
+	font-size: 14px;
+}
+
+.presentacion .h1{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.titulo{
+	font-size: 18px;
+	font-family: 'Verdana';
+	font-weight: bold;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.titulo:hover{
+	color: #7ea1ff;
+}
+
+.tspan{
+	float: left;
+}
+
+.flecha{
+	float: left;
+	width: 21px;
+	height: 23px;
+}
+
+.fdesc{
+	background: url("../images/desc.png") no-repeat;
+}
+
+.fasc{
+	background: url("../images/asc.png") no-repeat;
+}
+
+.referencia{
+	font-size: 10px;
+	font-style: italic;
+	text-align: right;
+	width: 100%;
+	color: #a9a7a7;
 }
 
 /* tables */
 table.tablesorter {
 	font-family: 'Arial';
-	background-color: #CDCDCD;
-	margin: 10px 0pt 15px;
 	font-size: 8pt;
 	width: 100%;
 	text-align: left;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+table.tablesorter tr, table.tablesorter th, table.tablesorter td{
+	border: 1px solid #666;
 }
 
 table.tablesorter thead tr th, table.tablesorter tfoot tr th {
-	background-color: #e6EEEE;
-	border: 1px solid #FFF;
+	background-color: #7ea1ff;	
 	font-size: 8pt;
 	padding: 4px;
+	text-transform: uppercase;
 }
 
 table.tablesorter thead tr .header {
@@ -46,5 +99,11 @@ table.tablesorter thead tr .headerSortDown {
 }
 
 table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
-	background-color: #8dbdd8;
+	background-color: #4476fd;
+}
+
+@media screen and (max-width: 450px){
+	.titulo{
+		font-size: 14px;
+	}
 }
