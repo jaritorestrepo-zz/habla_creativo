@@ -71,6 +71,16 @@
 	text-align: right;
 	width: 100%;
 	color: #a9a7a7;
+	max-width: 100%;
+	overflow-x: hidden;
+	font-family: 'Verdana';
+}
+
+.copyright{
+	font-family: 'Verdana';
+	font-size: 10px;
+	color: #a9a7a7;
+	text-align: center;
 }
 
 /* tables */
